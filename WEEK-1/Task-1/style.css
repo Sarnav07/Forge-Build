@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url("Background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat-y;
+  background-attachment: fixed;
+  padding:20px;
+
+}
+
+.navigation {
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(245, 235, 216);
+    border-radius: 10px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20%;
+    margin-bottom: 25px;
+}
+
+#navigation-1 {
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+
+}
+
+.navigation li {
+    padding-left: 30px;
+    margin-left: 25px;
+}
+
+.navigation li a {
+    padding-left: 20px;
+    text-decoration: none;
+    color:#555;
+    font-size: 20px;
+}
+
+.navigation li a:hover {
+    color: blue;
+}
+
+
+.Section-1 {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+#S1-1 img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#S1-2 {
+    /* padding-left: 200px;
+    margin-left: 200px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h4 {
+    color: #0056b3;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.Section-2 {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid black;
+    padding: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#S2_2-1 input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+#S2_2-2 button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+}
+
+#S2_2-2 button:hover {
+    background-color: #004494;
+} 
+
+.Section2_2 {
+    display: flex;
+    justify-content: center;
+    background-color:transparent ;
+    align-items: center;
+}
+
+.Section2_3 {
+    text-align: center;
+    padding: 40px 2px;
+}
+.Section-3 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-color:transparent ;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+
+}
+
+
+#S3-1 {
+    border: 1px solid black ;
+    padding: 10px 20px 20px 20px;
+    margin:20px 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow-x: auto;
+    width: auto;
+
+}
+
+#S3-2 {
+    border: 1px solid black ;
+    margin: 20px 10px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: auto ;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+table {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+th , td {
+  padding: 10px;
+  
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .navigation,
+    .Section-1,
+    .Section2_2,
+    .Section-3 {
+        display: block;
+        height: auto;
+        text-align: center; 
+    }
+
+    .navigation ul {
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .navigation li {
+       display: block; 
+       margin: 10px auto;
+    }
+
+    #S2_2-1 input,
+    #S2_2-2 button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+
+    #S3-1,
+    #S3-2 {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+
+/* @media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .navigation {
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+    }
+    
+    .navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .navigation li {
+       margin: 5px 10px;
+       padding: 0;
+    }
+    .Section-1 {
+        flex-direction: column;
+    }
+    .Section2_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #S2_2-1 input, #S2_2-2 button {
+        width: 100%; 
+        max-width: 400px;
+    }
+    .Section-3 {
+        flex-direction: column;
+    }
+
+    #S3-1, #S3-2 {
+        margin: 20px 0; 
+        width: 100%;
+    }
+} */

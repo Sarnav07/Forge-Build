@@ -1,0 +1,124 @@
+/* display - Must be set to flex or inline-flex
+flex-direction - Sets the display-direction of flex items
+flex-wrap - Specifies whether the flex items should wrap or not
+flex-flow - Shorthand property for flex-direction and flex-wrap
+justify-content - Aligns the flex items when they do not use all available space on the main-axis (horizontally)
+align-items - Aligns the flex items when they do not use all available space on the cross-axis (vertically)
+align-content - Aligns the flex lines when there is extra space in the cross axis and flex items wrap */
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/*The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.*/
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+/* The justify-content property is used to align the flex items when they do not use all available space on the main-axis (horizontally).
+
+This property can have one of the following values:
+
+center
+flex-start (default)
+flex-end
+space-around
+space-between
+space-evenly*/
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* The align-items property is used to align the flex items when they do not use all available space on the cross-axis (vertically).
+
+This property can have one of the following values:
+
+center
+flex-start
+flex-end
+stretch
+baseline
+normal (default)*/
+
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+}
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: flex-end;
+}
+
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+}
+
+
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+}

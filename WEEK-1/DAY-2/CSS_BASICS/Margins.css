@@ -1,0 +1,89 @@
+/*The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+Margins define the distance between an element's border and the surrounding elements.
+
+With CSS, you have full control over the margins. CSS has properties for setting the margin for each individual side of an element (top, right, bottom, and left), and a shorthand property for setting all the margin properties in one declaration.
+
+margin-top - sets the top margin of an element
+margin-right - sets the right margin of an element
+margin-bottom - sets the bottom margin of an element
+margin-left - sets the left margin of an element
+
+
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+*/
+
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+/* margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px */
+
+p {
+  margin: 25px 50px 75px 100px;
+}
+p {
+  margin: 25px 50px 75px;
+}
+p {
+  margin: 25px 50px;
+}
+p {
+  margin: 25px;
+}
+
+
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
+
+/*You can set the margin property to auto to horizontally center the element within its container.
+
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+
+You can set the margin property to inherit to let the margin be inherited from the parent element.
+
+This example lets the left margin of the <p class="ex1"> element be inherited from the parent element (<div>):
+*/
+
+h1 {
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/*Margin collapse is when two margins collapse into a single margin.
+
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+Note: Margin collapse only happens with top and bottom margins! Not left and right margins!
+
+In the following example, the <h1> element has a bottom margin of 50px and the <h2> element has a top margin of 20px. So, the vertical margin between the <h1> and the <h2> would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px:
+*/

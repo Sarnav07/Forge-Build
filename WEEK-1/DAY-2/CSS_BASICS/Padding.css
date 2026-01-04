@@ -1,0 +1,41 @@
+/* padding-top - sets the top padding of an element
+padding-right - sets the right padding of an element
+padding-bottom - sets the bottom padding of an element
+padding-left - sets the left padding of an element
+
+The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left), and a shorthand property for setting all the padding properties in one declaration
+
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+inherit - specifies that the padding should be inherited from the parent element*/
+
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+div {
+  padding: 25px 50px 75px 100px;
+}
+div {
+  padding: 25px 50px 75px;
+}
+div {
+  padding: 25px 50px;
+}
+
+div {
+  padding: 25px;
+}
+
+
+/*The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.
+
+The box-sizing property can have the following values:
+
+content-box - This is default. The width and height properties includes only the content (border and padding are not included)
+border-box - The width and height properties includes content, padding and border
+So, to keep the width at 300px, no matter the amount of padding, you can use the box-sizing: border-box;. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.*/

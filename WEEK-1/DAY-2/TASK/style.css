@@ -1,0 +1,93 @@
+body {
+  background-image: url("Background.jpeg");
+  background-position: center;
+  background-repeat:repeat-y;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.nav ul {
+  display: flex;             
+  justify-content: center; 
+  list-style-type: none;     
+  padding: 0 20px;
+  margin: 0
+  
+
+}
+
+.nav li {
+  margin-left : 20px;
+
+
+}
+
+.nav li a{
+  padding: 6px 70px;
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+
+}
+
+#About {
+  color:#0a0202 ;
+  text-align: center;
+  font-size: 50px;
+  margin : 10px;
+  padding : 10px 24px;
+  box-sizing: border-box;
+}
+
+div.Info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+}
+
+#Intro {
+  font-size: 120%;
+  font-style: oblique;
+  padding-left: 50px;
+ 
+}
+
+div.Table-List {
+  color:aliceblue;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+table {
+  text-align: center;
+}
+th , td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+#List {
+  color: lightgrey; 
+  padding: 50px;
+  
+}
+
+#Intro-2 {
+  margin: 50px;
+  font-size: 120%;
+  font-style: oblique
+
+}
+
+
+
